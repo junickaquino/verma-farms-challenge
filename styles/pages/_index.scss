@@ -76,10 +76,10 @@ section.hero {
 section.benefits {
   background-color: $beige-light;
   padding: 4em 1em;
+  margin-bottom: 5em;
 }
 
 .benefits__top {
-  //   background-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,4 +107,85 @@ section.benefits {
   .benefits__bottom {
     gap: 3em;
   }
+}
+
+// ========================
+// Satisfaction Section
+// ========================
+
+.satisfaction__img {
+  display: none;
+}
+
+.satisfaction__subtitle,
+.satisfaction__title,
+.list-item__name,
+.list-item__desc {
+  margin: 0;
+}
+
+section.satisfaction {
+  background-color: $clr-satisfaction-bg;
+  padding: 5em 0;
+}
+
+.satisfaction__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.satisfaction__title {
+  margin-bottom: 1.3em;
+}
+
+.satisfaction__list {
+  width: 25em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.satisfaction__list-item {
+  background-color: $clr-satisfaction;
+  border-radius: 10em;
+  padding: 1em 2em;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.list-item__icon {
+  width: 100%;
+  object-fit: contain;
+
+  &--hands {
+    max-width: 5em;
+    max-height: 5em;
+  }
+
+  &--squiggles {
+    max-width: 4em;
+    max-height: 4em;
+  }
+
+  &--lemon {
+    max-width: 5em;
+    max-height: 4em;
+  }
+
+  &--legal {
+    max-width: 4em;
+    max-height: 4em;
+  }
+}
+
+.list-item__content {
+  margin-left: 1em;
+}
+
+.list-item__name {
+  margin-bottom: 0.5em;
 }

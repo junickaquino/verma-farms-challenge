@@ -39,6 +39,31 @@ body {
 }
 
 // ===============================
+// Index.html - Satisfaction
+// ===============================
+
+.satisfaction__subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: $brown-light;
+}
+
+.satisfaction__title {
+  font-weight: 800;
+  color: $brown;
+}
+
+.list-item__name {
+  font-size: 1.15rem;
+}
+
+.list-item__desc {
+  font-size: 1rem;
+  color: $brown-light;
+  line-height: 1.5rem;
+}
+
+// ===============================
 // Footer
 // ===============================
 .footer__top--shop-text {

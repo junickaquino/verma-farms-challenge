@@ -489,6 +489,27 @@ body {
   }
 }
 
+.satisfaction__subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #a59684;
+}
+
+.satisfaction__title {
+  font-weight: 800;
+  color: #443636;
+}
+
+.list-item__name {
+  font-size: 1.15rem;
+}
+
+.list-item__desc {
+  font-size: 1rem;
+  color: #a59684;
+  line-height: 1.5rem;
+}
+
 .footer__top--shop-text {
   font-size: 1.6rem;
   font-weight: 900;
@@ -987,6 +1008,7 @@ section.hero {
 section.benefits {
   background-color: #fcf4ef;
   padding: 4em 1em;
+  margin-bottom: 5em;
 }
 
 .benefits__top {
@@ -1029,5 +1051,99 @@ section.benefits {
   .benefits__bottom {
     gap: 3em;
   }
+}
+
+.satisfaction__img {
+  display: none;
+}
+
+.satisfaction__subtitle,
+.satisfaction__title,
+.list-item__name,
+.list-item__desc {
+  margin: 0;
+}
+
+section.satisfaction {
+  background-color: #fbf4ee;
+  padding: 5em 0;
+}
+
+.satisfaction__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5em;
+}
+
+.satisfaction__title {
+  margin-bottom: 1.3em;
+}
+
+.satisfaction__list {
+  width: 25em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+}
+
+.satisfaction__list-item {
+  background-color: #fefaf8;
+  border-radius: 10em;
+  padding: 1em 2em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list-item__icon {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.list-item__icon--hands {
+  max-width: 5em;
+  max-height: 5em;
+}
+
+.list-item__icon--squiggles {
+  max-width: 4em;
+  max-height: 4em;
+}
+
+.list-item__icon--lemon {
+  max-width: 5em;
+  max-height: 4em;
+}
+
+.list-item__icon--legal {
+  max-width: 4em;
+  max-height: 4em;
+}
+
+.list-item__content {
+  margin-left: 1em;
+}
+
+.list-item__name {
+  margin-bottom: 0.5em;
 }
 /*# sourceMappingURL=main.css.map */

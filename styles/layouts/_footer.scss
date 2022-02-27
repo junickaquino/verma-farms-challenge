@@ -118,3 +118,10 @@
     gap: 1.5em;
   }
 }
+
+@include media-lg {
+  .footer__bottom {
+    gap: 3em;
+    padding: 4.5em 1em;
+  }
+}

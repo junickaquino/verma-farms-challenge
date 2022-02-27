@@ -21,7 +21,26 @@
 
 @include media-md {
   .wave__container {
-    top: -15em;
+    top: -14em;
+  }
+}
+
+@include media-lg {
+  .wave__container {
+    top: -17em;
+  }
+}
+
+@include media-xl {
+  .wave__container {
+    width: 100%;
+    top: -20em;
+  }
+}
+
+@include media-xxl {
+  .wave {
+    display: none;
   }
 }
 

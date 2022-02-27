@@ -573,7 +573,26 @@ body {
 
 @media only screen and (min-width: 900px) {
   .wave__container {
-    top: -15em;
+    top: -14em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wave__container {
+    top: -17em;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .wave__container {
+    width: 100%;
+    top: -20em;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .wave {
+    display: none;
   }
 }
 
@@ -632,6 +651,17 @@ body {
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
     padding: 1em 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .card {
+    max-width: 20em;
+    height: 30em;
+  }
+  .card__img {
+    width: 20em;
+    height: 30em;
   }
 }
 
@@ -695,6 +725,9 @@ body {
 @media only screen and (min-width: 900px) {
   .navbar__menu--btn {
     display: none;
+  }
+  .navbar {
+    padding: 0 3em;
   }
   .navigation {
     display: -webkit-box;
@@ -871,6 +904,13 @@ body {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .footer__bottom {
+    gap: 3em;
+    padding: 4.5em 1em;
+  }
+}
+
 section.hero {
   background-color: #edd3c1;
   min-height: 80vh;
@@ -983,5 +1023,11 @@ section.benefits {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1.5em;
+}
+
+@media only screen and (min-width: 1200px) {
+  .benefits__bottom {
+    gap: 3em;
+  }
 }
 /*# sourceMappingURL=main.css.map */

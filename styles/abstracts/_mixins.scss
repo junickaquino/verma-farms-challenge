@@ -30,3 +30,9 @@
     @content;
   }
 }
+
+@mixin media-xxl {
+  @media only screen and (min-width: $xxl-width) {
+    @content;
+  }
+}

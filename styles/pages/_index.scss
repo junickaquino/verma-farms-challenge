@@ -102,3 +102,9 @@ section.benefits {
   justify-content: center;
   gap: 1.5em;
 }
+
+@include media-lg {
+  .benefits__bottom {
+    gap: 3em;
+  }
+}

@@ -1,0 +1,66 @@
+.wave {
+  position: relative;
+}
+
+.wave__container {
+  position: absolute;
+  top: -5em;
+}
+
+.wave__svg {
+  path {
+    fill: $beige-light;
+  }
+}
+
+@include media-sm {
+  .wave__container {
+    top: -10em;
+  }
+}
+
+@include media-md {
+  .wave__container {
+    top: -15em;
+  }
+}
+
+// .wave {
+//   display: none;
+// }
+
+// @media only screen and (min-width: 2000px) {
+//   .wave {
+//     // background-color: #faead8;
+//     background-color: $beige-light;
+//     display: block;
+//     position: relative;
+//     height: 3em;
+//   }
+
+//   .svg {
+//     width: 100%;
+//     position: absolute;
+//     top: -16em;
+
+//     path {
+//       fill: $beige-light;
+//     }
+//   }
+// }
+
+// @media only screen and (min-width: 1116px) {
+//   .wave {
+//     height: 1em;
+//   }
+
+//   .svg {
+//     top: -18em;
+//   }
+// }
+
+// @media only screen and (min-width: 1280px) {
+//   .svg {
+//     top: -22em;
+//   }
+// }

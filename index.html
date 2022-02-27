@@ -153,6 +153,12 @@
         </div>
       </section>
 
+      <div class="wave">
+        <div class="wave__container">
+          <div class="wave__svg" id="wave__svg"></div>
+        </div>
+      </div>
+
       <section class="benefits">
         <div class="benefits__top">
           <h2 class="benefits__top--title">Verma's Benefits</h2>
@@ -250,5 +256,24 @@
         </div>
       </footer>
     </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js"
+      integrity="sha512-V1YyTKZJrzJNhcKthpNAaohFXBnu5K9j7Qiz6gv1knFuf13TW/3vpgVVhJu9fvbdW8lb5J6czIhD4fWK2iHKXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script src="/scripts/waves.js"></script> -->
+
+    <script>
+      const svgContainer = document.getElementById("wave__svg");
+      bodymovin.loadAnimation({
+        wrapper: svgContainer,
+        animType: "svg",
+        loop: true,
+        autoplay: true,
+        path: "/assets/waves/data-color-1.json",
+      });
+    </script>
   </body>
 </html>

@@ -496,6 +496,20 @@ body {
   margin: 0 auto;
 }
 
+.wave {
+  background-color: blue;
+  position: relative;
+}
+
+.wave__container {
+  position: absolute;
+  top: -5em;
+}
+
+.wave__svg path {
+  fill: #fcf4ef;
+}
+
 .navigation {
   display: none;
 }
@@ -552,7 +566,6 @@ body {
   color: #443636;
 }
 
-.benefits,
 footer {
   display: none;
 }
@@ -620,5 +633,10 @@ section.hero {
        object-position: 75%;
     top: 0;
   }
+}
+
+section.benefits {
+  background-color: #fcf4ef;
+  padding-top: 5em;
 }
 /*# sourceMappingURL=main.css.map */

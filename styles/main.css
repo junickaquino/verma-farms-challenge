@@ -479,6 +479,10 @@ body {
   font-size: 0.9rem;
 }
 
+.card__description {
+  font-size: 1.2rem;
+}
+
 .button {
   background-color: #f6914e;
   padding: 1.3em 3em;
@@ -508,6 +512,48 @@ body {
 
 .wave__svg path {
   fill: #fcf4ef;
+}
+
+.card {
+  max-width: 90%;
+  max-height: 70%;
+  border-radius: 1.5em;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 4px 20px 50px -21px rgba(0, 0, 0, 0.32);
+          box-shadow: 4px 20px 50px -21px rgba(0, 0, 0, 0.32);
+}
+
+.card__img {
+  width: 100%;
+  height: 125%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 40% -5em;
+     object-position: 40% -5em;
+}
+
+.card__description {
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 0 2em;
+}
+
+.card__description p {
+  width: 80%;
 }
 
 .navigation {
@@ -591,6 +637,7 @@ section.hero {
   overflow: hidden;
   gap: 2em;
   margin: -1em 0;
+  padding-bottom: 5em;
   z-index: -1;
 }
 
@@ -637,6 +684,40 @@ section.hero {
 
 section.benefits {
   background-color: #fcf4ef;
-  padding-top: 5em;
+  padding: 4em 1em;
+}
+
+.benefits__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.benefits__top--title {
+  margin: 0;
+}
+
+.benefits__top--subtitle {
+  color: #a59684;
+}
+
+.benefits__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.5em;
 }
 /*# sourceMappingURL=main.css.map */

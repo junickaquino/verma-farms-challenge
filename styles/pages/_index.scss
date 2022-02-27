@@ -22,6 +22,7 @@ section.hero {
   overflow: hidden;
   gap: 2em;
   margin: -1em 0;
+  padding-bottom: 5em;
   z-index: -1;
 }
 
@@ -69,9 +70,28 @@ section.hero {
 
 section.benefits {
   background-color: $beige-light;
-  padding-top: 5em;
+  padding: 4em 1em;
 }
 
 .benefits__top {
   //   background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.benefits__top--title {
+  margin: 0;
+}
+
+.benefits__top--subtitle {
+  color: $brown-light;
+}
+
+.benefits__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5em;
 }

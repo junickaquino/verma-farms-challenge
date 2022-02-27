@@ -19,7 +19,6 @@ section.hero {
   gap: 2em;
   margin: -1em 0;
   padding-bottom: 5em;
-  z-index: -1;
 }
 
 .hero__img {
@@ -79,10 +78,12 @@ section.benefits {
 
 .benefits__top--title {
   margin: 0;
+  z-index: 1;
 }
 
 .benefits__top--subtitle {
   color: $brown-light;
+  z-index: 1;
 }
 
 .benefits__bottom {

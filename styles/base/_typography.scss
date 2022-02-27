@@ -32,6 +32,12 @@ body {
   font-size: 1.2rem;
 }
 
+@include media-sm {
+  .card__description {
+    font-size: 1rem;
+  }
+}
+
 // ===============================
 // Footer
 // ===============================
@@ -42,4 +48,14 @@ body {
 
 .footer__navigation--list {
   font-size: 1.4rem;
+}
+
+@include media-sm {
+  .footer__navigation--list {
+    font-size: 1.2rem;
+  }
+
+  .footer__legal--list {
+    font-size: 0.9rem;
+  }
 }

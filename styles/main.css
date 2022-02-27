@@ -483,6 +483,12 @@ body {
   font-size: 1.2rem;
 }
 
+@media only screen and (min-width: 700px) {
+  .card__description {
+    font-size: 1rem;
+  }
+}
+
 .footer__top--shop-text {
   font-size: 1.6rem;
   font-weight: 900;
@@ -490,6 +496,15 @@ body {
 
 .footer__navigation--list {
   font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .footer__navigation--list {
+    font-size: 1.2rem;
+  }
+  .footer__legal--list {
+    font-size: 0.9rem;
+  }
 }
 
 .button {
@@ -501,6 +516,7 @@ body {
   -webkit-box-shadow: 4px 33px 62px -13px rgba(0, 0, 0, 0.575);
           box-shadow: 4px 33px 62px -13px rgba(0, 0, 0, 0.575);
   color: white;
+  cursor: pointer;
 }
 
 .button--hero {
@@ -510,7 +526,6 @@ body {
 }
 
 .wave {
-  background-color: blue;
   position: relative;
 }
 
@@ -521,6 +536,12 @@ body {
 
 .wave__svg path {
   fill: #fcf4ef;
+}
+
+@media only screen and (min-width: 700px) {
+  .wave__container {
+    top: -10em;
+  }
 }
 
 .card {
@@ -565,6 +586,22 @@ body {
   width: 80%;
 }
 
+@media only screen and (min-width: 700px) {
+  .card {
+    max-width: 30%;
+    max-height: 70%;
+  }
+  .card__img {
+    -o-object-position: 40% -2em;
+       object-position: 40% -2em;
+  }
+  .card__description {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    padding: 1em 0;
+  }
+}
+
 .navigation {
   display: none;
 }
@@ -583,6 +620,7 @@ body {
           align-items: center;
   gap: 1em;
   padding: 0 1em;
+  z-index: 888;
 }
 
 .navbar__menu--btn {
@@ -720,6 +758,31 @@ body {
   color: #79886b;
 }
 
+@media only screen and (min-width: 700px) {
+  .footer__top {
+    padding: 1em 3em;
+  }
+  .footer__navigation--list,
+  .footer__legal--list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__navigation {
+    width: 90%;
+  }
+  .footer__navigation--list {
+    width: 100%;
+  }
+  .footer__logo--img {
+    max-width: 40em;
+  }
+}
+
 section.hero {
   background-color: #edd3c1;
   min-height: 80vh;
@@ -742,7 +805,6 @@ section.hero {
   gap: 2em;
   margin: -1em 0;
   padding-bottom: 5em;
-  z-index: -1;
 }
 
 .hero__img {
@@ -807,10 +869,12 @@ section.benefits {
 
 .benefits__top--title {
   margin: 0;
+  z-index: 1;
 }
 
 .benefits__top--subtitle {
   color: #a59684;
+  z-index: 1;
 }
 
 .benefits__bottom {

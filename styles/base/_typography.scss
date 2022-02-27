@@ -3,7 +3,7 @@ body {
 }
 
 // ===============================
-// Index.html - Navigation
+// Navigation
 // ===============================
 
 .cart__counter {
@@ -25,6 +25,21 @@ body {
   font-size: 0.9rem;
 }
 
+// ===============================
+// Index.html - Benefits
+// ===============================
 .card__description {
   font-size: 1.2rem;
+}
+
+// ===============================
+// Footer
+// ===============================
+.footer__top--shop-text {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.footer__navigation--list {
+  font-size: 1.4rem;
 }

@@ -483,6 +483,15 @@ body {
   font-size: 1.2rem;
 }
 
+.footer__top--shop-text {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.footer__navigation--list {
+  font-size: 1.4rem;
+}
+
 .button {
   background-color: #f6914e;
   padding: 1.3em 3em;
@@ -612,8 +621,103 @@ body {
   color: #443636;
 }
 
-footer {
+.button--btp {
   display: none;
+}
+
+.footer__top {
+  background-color: #edd3c1;
+  height: 7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em 1.5em;
+}
+
+.footer__top--logo {
+  width: 4em;
+  height: 4em;
+}
+
+.footer__top--shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+  cursor: pointer;
+}
+
+.footer__top--shop-text {
+  margin: 0;
+  color: #443636;
+}
+
+.footer__top--shop-arrow {
+  width: 2.3em;
+  height: 1.3em;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.footer__bottom {
+  background-color: #3c562c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 3em 1em;
+  gap: 2em;
+}
+
+.footer__navigation--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+  margin-bottom: 1.3em;
+}
+
+.footer__navigation--list a {
+  color: #fcf4ef;
+}
+
+.footer__logo--img {
+  width: 50%;
+}
+
+.footer__legal--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+}
+
+.footer__legal--list a {
+  color: #79886b;
 }
 
 section.hero {

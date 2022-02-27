@@ -1,0 +1,71 @@
+body {
+  font-family: "Tisa Sans", "Source Sans Pro", sans-serif;
+}
+
+// ===============================
+// Navigation
+// ===============================
+
+.cart__counter {
+  font-size: 1.5rem;
+}
+
+// ===============================
+// Index.html - Hero
+// ===============================
+.hero__content--title {
+  font-weight: 900;
+}
+
+.hero__content--subtitle {
+  font-size: 1.15rem;
+}
+
+.button--hero {
+  font-size: 0.9rem;
+}
+
+// ===============================
+// Index.html - Benefits
+// ===============================
+.card__description {
+  font-size: 1.2rem;
+}
+
+@include media-sm {
+  .card__description {
+    font-size: 1rem;
+  }
+}
+
+// ===============================
+// Footer
+// ===============================
+.footer__top--shop-text {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.footer__navigation--list {
+  font-size: 1.4rem;
+}
+
+@include media-sm {
+  .footer__navigation--list {
+    font-size: 1.2rem;
+  }
+
+  .footer__legal--list {
+    font-size: 0.9rem;
+  }
+}
+
+@include media-md {
+  .footer__top--shop-text {
+    font-size: 2rem;
+  }
+
+  .footer__legal--list {
+    font-size: 1rem;
+  }
+}

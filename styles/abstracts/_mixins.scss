@@ -1,0 +1,32 @@
+// ===================
+// Media queries
+// ===================
+@mixin media-xs {
+  @media only screen and (min-width: $xs-width) {
+    @content;
+  }
+}
+
+@mixin media-sm {
+  @media only screen and (min-width: $sm-width) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media only screen and (min-width: $md-width) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media only screen and (min-width: $lg-width) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media only screen and (min-width: $xl-width) {
+    @content;
+  }
+}

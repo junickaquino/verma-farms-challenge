@@ -1,0 +1,49 @@
+.navigation {
+  display: none;
+}
+
+.navbar {
+  background-color: $beige;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5em;
+}
+
+.navbar__menu--btn {
+  height: 2.5em;
+  cursor: pointer;
+
+  path {
+    stroke: $brown;
+  }
+}
+
+.navbar__logo {
+  //   width: 10.625em;
+  //   height: 1.125em;
+  width: 12.5em;
+  height: 2.5em;
+}
+
+.cart {
+  position: relative;
+  width: 2.5em;
+  height: 2.5em;
+  cursor: pointer;
+}
+
+.cart__outline {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+}
+
+.cart__counter {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $brown;
+}

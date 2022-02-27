@@ -13,7 +13,7 @@ section.hero {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   overflow: hidden;
   gap: 2em;
@@ -48,14 +48,24 @@ section.hero {
   color: $brown-light;
 }
 
-@media only screen and (min-width: 900px) {
+@include media-md {
+  .hero__img--mobile {
+    display: none;
+  }
+
   .hero__img {
+    display: block;
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 75%;
-    top: 0;
+  }
+
+  .hero__content {
+    max-width: 50%;
+    align-self: flex-start;
+    text-align: unset;
+    margin-top: 10em;
   }
 }
 

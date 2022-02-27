@@ -23,8 +23,6 @@
 }
 
 .navbar__logo {
-  //   width: 10.625em;
-  //   height: 1.125em;
   width: 12em;
   height: 2.5em;
 }
@@ -48,4 +46,36 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: $brown;
+}
+
+@include media-md {
+  .navbar__menu--btn {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 1em;
+  }
+
+  .navigation__list {
+    display: flex;
+    gap: 1em;
+
+    a {
+      color: $brown-light;
+
+      &:hover {
+        color: $brown;
+      }
+    }
+  }
+
+  .cart__counter {
+    left: 65%;
+  }
 }

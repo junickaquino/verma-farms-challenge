@@ -59,3 +59,13 @@ body {
     font-size: 0.9rem;
   }
 }
+
+@include media-md {
+  .footer__top--shop-text {
+    font-size: 2rem;
+  }
+
+  .footer__legal--list {
+    font-size: 1rem;
+  }
+}

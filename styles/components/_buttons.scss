@@ -2,16 +2,32 @@
   background-color: $orange;
   padding: 1.3em 3em;
   border-radius: 0.3em;
-  box-shadow: 0px 5px 10px black;
-  box-shadow: 4px 33px 62px -13px rgba(0, 0, 0, 0.575);
   color: white;
   cursor: pointer;
+  transition: ease-in-out 0.3s;
+
+  &:hover {
+    box-shadow: 4px 33px 62px -13px rgba(0, 0, 0, 0.575);
+  }
 }
 
 .button--hero {
   display: block;
   width: 90%;
   margin: 0 auto;
+}
+
+.button--about {
+  width: 90%;
+  border-radius: 0.7em;
+  @include btn-flat;
+  background-color: $green;
+}
+
+.button--learn {
+  width: 80%;
+  border-radius: 0.7em;
+  @include btn-flat;
 }
 
 @include media-md {
@@ -29,5 +45,15 @@
     box-shadow: none;
     padding: 0.7em 2em;
     letter-spacing: 0.15rem;
+  }
+
+  .button--about {
+    max-width: 20em;
+  }
+}
+
+@include media-lg {
+  .button--learn {
+    width: 70%;
   }
 }

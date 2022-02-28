@@ -48,3 +48,15 @@
     padding: 1em 0;
   }
 }
+
+@include media-lg {
+  .card {
+    max-width: 20em;
+    height: 30em;
+  }
+
+  .card__img {
+    width: 20em;
+    height: 30em;
+  }
+}

@@ -54,6 +54,7 @@
 
   a {
     color: $beige-light;
+    @include link-hover($beige-light);
   }
 }
 
@@ -68,6 +69,7 @@
 
   a {
     color: $clr-legal;
+    @include link-hover($clr-legal);
   }
 }
 
@@ -116,5 +118,12 @@
 
   .footer__legal--list {
     gap: 1.5em;
+  }
+}
+
+@include media-lg {
+  .footer__bottom {
+    gap: 3em;
+    padding: 4.5em 1em;
   }
 }

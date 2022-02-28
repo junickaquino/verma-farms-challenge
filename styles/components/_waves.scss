@@ -21,46 +21,25 @@
 
 @include media-md {
   .wave__container {
-    top: -15em;
+    top: -14em;
   }
 }
 
-// .wave {
-//   display: none;
-// }
+@include media-lg {
+  .wave__container {
+    top: -17em;
+  }
+}
 
-// @media only screen and (min-width: 2000px) {
-//   .wave {
-//     // background-color: #faead8;
-//     background-color: $beige-light;
-//     display: block;
-//     position: relative;
-//     height: 3em;
-//   }
+@include media-xl {
+  .wave__container {
+    width: 100%;
+    top: -20em;
+  }
+}
 
-//   .svg {
-//     width: 100%;
-//     position: absolute;
-//     top: -16em;
-
-//     path {
-//       fill: $beige-light;
-//     }
-//   }
-// }
-
-// @media only screen and (min-width: 1116px) {
-//   .wave {
-//     height: 1em;
-//   }
-
-//   .svg {
-//     top: -18em;
-//   }
-// }
-
-// @media only screen and (min-width: 1280px) {
-//   .svg {
-//     top: -22em;
-//   }
-// }
+@include media-xxl {
+  .wave {
+    display: none;
+  }
+}

@@ -25,6 +25,7 @@
 .navbar__logo {
   width: 12em;
   height: 2.5em;
+  cursor: pointer;
 }
 
 .cart {
@@ -32,6 +33,7 @@
   width: 2.5em;
   height: 2.5em;
   cursor: pointer;
+  z-index: 999;
 }
 
 .cart__outline {
@@ -53,6 +55,10 @@
     display: none;
   }
 
+  .navbar {
+    padding: 0 3em;
+  }
+
   .navigation {
     display: flex;
     justify-content: space-between;
@@ -68,10 +74,9 @@
 
     a {
       color: $brown-light;
+      transition: ease-out 0.1s;
 
-      &:hover {
-        color: $brown;
-      }
+      @include link-hover($brown);
     }
   }
 

@@ -30,3 +30,53 @@
     @content;
   }
 }
+
+@mixin media-xxl {
+  @media only screen and (min-width: $xxl-width) {
+    @content;
+  }
+}
+
+// ===================
+// Typography
+// ===================
+
+@mixin ft-title {
+  font-weight: 800;
+  color: $brown;
+}
+
+@mixin ft-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: $brown-light;
+}
+
+@mixin ft-subtitle--about {
+  font-size: 1rem;
+  color: $brown;
+}
+
+// ===================
+// Buttons
+// ===================
+
+@mixin btn-flat {
+  border-radius: 0.7em;
+  box-shadow: none;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.17rem;
+}
+
+// ===================
+// Hover and Focus on links
+// ===================
+@mixin link-hover($color) {
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $color;
+    border-bottom: 2px solid $color;
+  }
+}

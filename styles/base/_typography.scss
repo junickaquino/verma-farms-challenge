@@ -76,6 +76,16 @@ body {
   line-height: 1.5em;
 }
 
+@include media-lg {
+  .learn__subtitle {
+    font-size: 1.2rem;
+  }
+
+  .learn__title {
+    font-size: 2.5rem;
+  }
+}
+
 // ===============================
 // Footer
 // ===============================

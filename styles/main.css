@@ -525,6 +525,15 @@ body {
   line-height: 1.5em;
 }
 
+@media only screen and (min-width: 1200px) {
+  .learn__subtitle {
+    font-size: 1.2rem;
+  }
+  .learn__title {
+    font-size: 2.5rem;
+  }
+}
+
 .footer__top--shop-text {
   font-size: 1.6rem;
   font-weight: 900;
@@ -595,6 +604,12 @@ body {
             box-shadow: none;
     padding: 0.7em 2em;
     letter-spacing: 0.15rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .button--learn {
+    width: 70%;
   }
 }
 
@@ -1267,6 +1282,10 @@ section.learn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
 }
 
 .learn__container {
@@ -1279,6 +1298,7 @@ section.learn {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 2em;
+  max-width: 40em;
 }
 
 .learn__img {
@@ -1306,5 +1326,44 @@ section.learn {
 .learn__desc {
   padding: 0.7em 1em;
   text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+  section.learn {
+    height: 95vh;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  section.learn {
+    height: 100vh;
+  }
+  .learn__container {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: column;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    gap: 1em;
+    max-width: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .learn__img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .learn__content {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-right: 5%;
+  }
+  .learn__desc {
+    padding: 1em 0;
+    text-align: unset;
+    color: #a59684;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -263,7 +263,7 @@ section.satisfaction {
 }
 
 // ========================
-// Benefits Section
+// Learn Section
 // ========================
 section.learn {
   background-color: $beige-dark;
@@ -271,6 +271,8 @@ section.learn {
   padding: 2em 0;
   display: flex;
   align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .learn__container {
@@ -278,6 +280,7 @@ section.learn {
   display: flex;
   flex-direction: column;
   gap: 2em;
+  max-width: 40em;
 }
 
 .learn__img {
@@ -298,4 +301,40 @@ section.learn {
 .learn__desc {
   padding: 0.7em 1em;
   text-align: center;
+}
+
+@include media-md {
+  section.learn {
+    height: 95vh;
+  }
+}
+
+@include media-lg {
+  section.learn {
+    height: 100vh;
+  }
+
+  .learn__container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+    max-width: 90%;
+    align-items: center;
+  }
+
+  .learn__img {
+    object-fit: contain;
+  }
+
+  .learn__content {
+    align-items: flex-start;
+    padding-right: 5%;
+  }
+
+  .learn__desc {
+    padding: 1em 0;
+    text-align: unset;
+    color: $brown-light;
+  }
 }

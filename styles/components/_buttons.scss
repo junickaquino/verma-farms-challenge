@@ -40,3 +40,9 @@
     letter-spacing: 0.15rem;
   }
 }
+
+@include media-lg {
+  .button--learn {
+    width: 70%;
+  }
+}

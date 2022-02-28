@@ -14,13 +14,17 @@
   margin: 0 auto;
 }
 
+.button--about {
+  width: 90%;
+  border-radius: 0.7em;
+  @include btn-flat;
+  background-color: $green;
+}
+
 .button--learn {
   width: 80%;
   border-radius: 0.7em;
-  box-shadow: none;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.17rem;
+  @include btn-flat;
 }
 
 @include media-md {
@@ -38,6 +42,10 @@
     box-shadow: none;
     padding: 0.7em 2em;
     letter-spacing: 0.15rem;
+  }
+
+  .button--about {
+    width: 40%;
   }
 }
 

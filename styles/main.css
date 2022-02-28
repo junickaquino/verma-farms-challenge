@@ -489,6 +489,25 @@ body {
   }
 }
 
+.about__subtitle {
+  font-size: 1rem;
+  color: #443636;
+}
+
+.about__subtitle--block3 {
+  font-size: 1rem;
+}
+
+.about__title {
+  font-weight: 800;
+  color: #443636;
+}
+
+.about__desc {
+  line-height: 1.5em;
+  color: #a59684;
+}
+
 .satisfaction__subtitle {
   font-size: 1rem;
   font-weight: 400;
@@ -579,8 +598,21 @@ body {
   margin: 0 auto;
 }
 
+.button--about {
+  width: 90%;
+  border-radius: 0.7em;
+  border-radius: 0.7em;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.17rem;
+  background-color: #3c562c;
+}
+
 .button--learn {
   width: 80%;
+  border-radius: 0.7em;
   border-radius: 0.7em;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -604,6 +636,9 @@ body {
             box-shadow: none;
     padding: 0.7em 2em;
     letter-spacing: 0.15rem;
+  }
+  .button--about {
+    width: 40%;
   }
 }
 
@@ -1097,6 +1132,78 @@ section.benefits {
   .benefits__bottom {
     gap: 3em;
   }
+}
+
+.about__title,
+.about__subtitle,
+.about__desc {
+  margin: 0;
+}
+
+section.about {
+  padding: 3em 1em;
+  background-color: #fefaf8;
+}
+
+.about__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2em;
+  padding: 1em 2em;
+  gap: 1em;
+}
+
+.about__subtitle {
+  padding: 0.5em 0;
+  border-bottom: 2px solid #f6914e;
+}
+
+.block-1__img--container {
+  max-width: 15%;
+}
+
+.block-1__img {
+  width: 100%;
+}
+
+.about__desc {
+  text-align: center;
+}
+
+.block-2__img--container {
+  width: 55%;
+}
+
+.block-2__img {
+  width: 100%;
+}
+
+.about__block--3 {
+  height: 22em;
+  width: 18em;
+  margin: 0 auto;
+}
+
+.block-3__img--container {
+  width: 60%;
+  height: 30%;
+  margin-bottom: 2em;
+}
+
+.block-3__img {
+  width: 100%;
+}
+
+.about__block--4, .about__block--5, .about__block--6 {
+  display: none;
 }
 
 .satisfaction__img {

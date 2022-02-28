@@ -112,6 +112,79 @@ section.benefits {
 }
 
 // ========================
+// About CBD Section
+// ========================
+
+.about__title,
+.about__subtitle,
+.about__desc {
+  margin: 0;
+}
+
+section.about {
+  padding: 3em 1em;
+  background-color: $beige-lighter;
+}
+
+.about__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+  padding: 1em 2em;
+  gap: 1em;
+}
+
+.about__subtitle {
+  padding: 0.5em 0;
+  border-bottom: 2px solid $orange;
+}
+
+.block-1__img--container {
+  max-width: 15%;
+}
+
+.block-1__img {
+  width: 100%;
+}
+
+.about__desc {
+  text-align: center;
+}
+
+.block-2__img--container {
+  width: 55%;
+}
+
+.block-2__img {
+  width: 100%;
+}
+
+.about__block--3 {
+  height: 22em;
+  width: 18em;
+  margin: 0 auto;
+}
+
+.block-3__img--container {
+  width: 60%;
+  height: 30%;
+  margin-bottom: 2em;
+}
+
+.block-3__img {
+  width: 100%;
+}
+
+.about__block {
+  &--4,
+  &--5,
+  &--6 {
+    display: none;
+  }
+}
+
+// ========================
 // Satisfaction Section
 // ========================
 
@@ -265,6 +338,7 @@ section.satisfaction {
 // ========================
 // Learn Section
 // ========================
+
 section.learn {
   background-color: $beige-dark;
   height: 90vh;

@@ -51,3 +51,20 @@
   font-weight: 400;
   color: $brown-light;
 }
+
+@mixin ft-subtitle--about {
+  font-size: 1rem;
+  color: $brown;
+}
+
+// ===================
+// Buttons
+// ===================
+
+@mixin btn-flat {
+  border-radius: 0.7em;
+  box-shadow: none;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.17rem;
+}

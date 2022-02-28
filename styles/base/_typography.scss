@@ -39,6 +39,27 @@ body {
 }
 
 // ===============================
+// Index.html - About
+// ===============================
+
+.about__subtitle {
+  @include ft-subtitle--about;
+}
+
+.about__subtitle--block3 {
+  font-size: 1rem;
+}
+
+.about__title {
+  @include ft-title;
+}
+
+.about__desc {
+  line-height: 1.5em;
+  color: $brown-light;
+}
+
+// ===============================
 // Index.html - Satisfaction
 // ===============================
 

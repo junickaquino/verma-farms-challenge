@@ -43,14 +43,11 @@ body {
 // ===============================
 
 .satisfaction__subtitle {
-  font-size: 1rem;
-  font-weight: 400;
-  color: $brown-light;
+  @include ft-subtitle;
 }
 
 .satisfaction__title {
-  font-weight: 800;
-  color: $brown;
+  @include ft-title;
 }
 
 .list-item__name {
@@ -61,6 +58,22 @@ body {
   font-size: 1rem;
   color: $brown-light;
   line-height: 1.5rem;
+}
+
+// ===============================
+// Index.html - Learn
+// ===============================
+
+.learn__subtitle {
+  @include ft-subtitle;
+}
+
+.learn__title {
+  @include ft-title;
+}
+
+.learn__desc {
+  line-height: 1.5em;
 }
 
 // ===============================

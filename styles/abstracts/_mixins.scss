@@ -36,3 +36,18 @@
     @content;
   }
 }
+
+// ===================
+// Typography
+// ===================
+
+@mixin ft-title {
+  font-weight: 800;
+  color: $brown;
+}
+
+@mixin ft-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: $brown-light;
+}

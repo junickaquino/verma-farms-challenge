@@ -69,6 +69,13 @@ section.hero {
   }
 }
 
+@include media-lg {
+  .hero__content {
+    max-width: 40em;
+    margin-left: 5%;
+  }
+}
+
 // ========================
 // Benefits Section
 // ========================

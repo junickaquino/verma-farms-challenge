@@ -132,11 +132,11 @@ section.about {
   align-items: center;
   margin-bottom: 2em;
   padding: 1em 2em;
-  gap: 1em;
 }
 
 .about__subtitle {
   padding: 0.5em 0;
+  margin-bottom: 1em;
   border-bottom: 2px solid $orange;
 }
 
@@ -148,7 +148,8 @@ section.about {
   width: 100%;
 }
 
-.about__desc {
+.about__desc,
+.about__subtitle {
   text-align: center;
 }
 
@@ -160,20 +161,52 @@ section.about {
   width: 100%;
 }
 
-.about__block--3 {
-  height: 22em;
-  width: 18em;
-  margin: 0 auto;
+.about__block {
+  &--3,
+  &--4,
+  &--5,
+  &--6 {
+    height: 22em;
+    width: 18em;
+    margin: 0 auto;
+  }
 }
 
-.block-3__img--container {
-  width: 60%;
-  height: 30%;
-  margin-bottom: 2em;
+.block {
+  &-3__img--container,
+  &-4__img--container,
+  &-5__img--container,
+  &-6__img--container {
+    position: relative;
+    top: 1.5em;
+    width: 100%;
+    height: 30%;
+    margin-bottom: 2em;
+  }
+
+  //   &-3__img--container {
+  //     height: 30%;
+  //   }
+  //   &-4__img--container {
+  //     height: 20%;
+  //   }
+  //   &-5__img--container {
+  //     height: 15%;
+  //   }
+  //   &-6__img--container {
+  //     height: 20%;
+  //   }
 }
 
-.block-3__img {
-  width: 100%;
+.block {
+  &-3__img,
+  &-4__img,
+  &-5__img,
+  &-6__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
 
 .about__block {
@@ -181,6 +214,84 @@ section.about {
   &--5,
   &--6 {
     display: none;
+  }
+}
+
+@include media-md {
+  .about__block--1 {
+    width: 50%;
+    gap: 1.5em;
+    margin: 0 auto;
+  }
+
+  .block-1__img--container {
+    max-width: 5em;
+  }
+}
+
+@include media-lg {
+  .about__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 0.7fr 1fr 1fr 0.5fr;
+    grid-template-areas:
+      "b1 b1 b1"
+      "b3 b2 b5"
+      "b4 b2 b6"
+      "b7 b7 b7";
+  }
+
+  .about__block {
+    &--4,
+    &--5,
+    &--6 {
+      display: block;
+    }
+  }
+
+  .about__block {
+    &--1 {
+      grid-area: b1;
+    }
+
+    &--2 {
+      grid-area: b2;
+    }
+
+    &--3 {
+      grid-area: b3;
+    }
+
+    &--4 {
+      grid-area: b4;
+    }
+
+    &--5 {
+      grid-area: b5;
+    }
+
+    &--6 {
+      grid-area: b6;
+    }
+
+    &--7 {
+      grid-area: b7;
+    }
+  }
+
+  .about__block--1 {
+    align-self: center;
+    justify-self: center;
+    width: 30%;
+    gap: 1.5em;
+  }
+
+  .about__block--2 {
+    align-self: center;
+  }
+
+  .block-2__img--container {
+    width: 90%;
   }
 }
 

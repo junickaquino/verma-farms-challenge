@@ -66,9 +66,14 @@ section.hero {
 }
 
 @include media-lg {
+  section.hero {
+    padding-bottom: 17em;
+  }
+
   .hero__content {
-    max-width: 40em;
+    max-width: 30em;
     margin-left: 5%;
+    margin-top: 9em;
   }
 }
 
@@ -86,16 +91,17 @@ section.benefits {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-bottom: 2em;
 }
 
 .benefits__top--title {
-  margin: 0;
+  margin: 0 0 0.5em 0;
   z-index: 1;
 }
 
 .benefits__top--subtitle {
-  color: $brown-light;
   z-index: 1;
+  max-width: 90%;
 }
 
 .benefits__bottom {
@@ -105,7 +111,17 @@ section.benefits {
   gap: 1.5em;
 }
 
+@include media-md {
+  .benefits__top--subtitle {
+    max-width: 70%;
+  }
+}
+
 @include media-lg {
+  .benefits__top--subtitle {
+    max-width: 50%;
+  }
+
   .benefits__bottom {
     gap: 3em;
   }
@@ -132,6 +148,7 @@ section.about {
   align-items: center;
   margin-bottom: 2em;
   padding: 1em 2em;
+  gap: 1em;
 }
 
 .about__subtitle {
@@ -225,7 +242,7 @@ section.about {
   }
 
   .block-1__img--container {
-    max-width: 5em;
+    max-width: 4em;
   }
 
   .block-flex {

@@ -469,6 +469,7 @@ body {
 
 .hero__content--title {
   font-weight: 900;
+  color: #443636;
 }
 
 .hero__content--subtitle {
@@ -477,6 +478,28 @@ body {
 
 .button--hero {
   font-size: 0.9rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero__content--title {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .hero__content--title {
+    font-size: 3rem;
+  }
+}
+
+.benefits__top--title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #443636;
+}
+
+.benefits__top--subtitle {
+  color: #a59684;
 }
 
 .card__description {
@@ -508,6 +531,18 @@ body {
   color: #a59684;
 }
 
+@media only screen and (min-width: 1200px) {
+  .about__title {
+    font-size: 2.3rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .about__title {
+    font-size: 2.7rem;
+  }
+}
+
 .satisfaction__subtitle {
   font-size: 1rem;
   font-weight: 400;
@@ -527,6 +562,21 @@ body {
   font-size: 1rem;
   color: #a59684;
   line-height: 1.5rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  .satisfaction__title {
+    font-size: 2.3rem;
+  }
+  .satisfaction__subtitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .satisfaction__title {
+    font-size: 2.7rem;
+  }
 }
 
 .learn__subtitle {
@@ -805,6 +855,7 @@ body {
   width: 2.5em;
   height: 2.5em;
   cursor: pointer;
+  z-index: 999;
 }
 
 .cart__outline {
@@ -1101,9 +1152,13 @@ section.hero {
 }
 
 @media only screen and (min-width: 1200px) {
+  section.hero {
+    padding-bottom: 17em;
+  }
   .hero__content {
-    max-width: 40em;
+    max-width: 30em;
     margin-left: 5%;
+    margin-top: 9em;
   }
 }
 
@@ -1124,16 +1179,17 @@ section.benefits {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  margin-bottom: 2em;
 }
 
 .benefits__top--title {
-  margin: 0;
+  margin: 0 0 0.5em 0;
   z-index: 1;
 }
 
 .benefits__top--subtitle {
-  color: #a59684;
   z-index: 1;
+  max-width: 90%;
 }
 
 .benefits__bottom {
@@ -1148,7 +1204,16 @@ section.benefits {
   gap: 1.5em;
 }
 
+@media only screen and (min-width: 900px) {
+  .benefits__top--subtitle {
+    max-width: 70%;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
+  .benefits__top--subtitle {
+    max-width: 50%;
+  }
   .benefits__bottom {
     gap: 3em;
   }
@@ -1178,6 +1243,7 @@ section.about {
           align-items: center;
   margin-bottom: 2em;
   padding: 1em 2em;
+  gap: 1em;
 }
 
 .about__subtitle {
@@ -1239,7 +1305,7 @@ section.about {
     margin: 0 auto;
   }
   .block-1__img--container {
-    max-width: 5em;
+    max-width: 4em;
   }
   .block-flex {
     display: -webkit-box;

@@ -15,6 +15,7 @@ body {
 // ===============================
 .hero__content--title {
   font-weight: 900;
+  color: $brown;
 }
 
 .hero__content--subtitle {
@@ -25,9 +26,31 @@ body {
   font-size: 0.9rem;
 }
 
+@include media-lg {
+  .hero__content--title {
+    font-size: 2.5rem;
+  }
+}
+
+@include media-xl {
+  .hero__content--title {
+    font-size: 3rem;
+  }
+}
+
 // ===============================
 // Index.html - Benefits
 // ===============================
+.benefits__top--title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: $brown;
+}
+
+.benefits__top--subtitle {
+  color: $brown-light;
+}
+
 .card__description {
   font-size: 1.2rem;
 }
@@ -59,6 +82,18 @@ body {
   color: $brown-light;
 }
 
+@include media-lg {
+  .about__title {
+    font-size: 2.3rem;
+  }
+}
+
+@include media-xl {
+  .about__title {
+    font-size: 2.7rem;
+  }
+}
+
 // ===============================
 // Index.html - Satisfaction
 // ===============================
@@ -79,6 +114,22 @@ body {
   font-size: 1rem;
   color: $brown-light;
   line-height: 1.5rem;
+}
+
+@include media-lg {
+  .satisfaction__title {
+    font-size: 2.3rem;
+  }
+
+  .satisfaction__subtitle {
+    font-size: 1.3rem;
+  }
+}
+
+@include media-xl {
+  .satisfaction__title {
+    font-size: 2.7rem;
+  }
 }
 
 // ===============================

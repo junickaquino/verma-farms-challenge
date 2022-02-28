@@ -25,6 +25,7 @@
 .navbar__logo {
   width: 12em;
   height: 2.5em;
+  cursor: pointer;
 }
 
 .cart {
@@ -72,10 +73,9 @@
 
     a {
       color: $brown-light;
+      transition: ease-out 0.1s;
 
-      &:hover {
-        color: $brown;
-      }
+      @include link-hover($brown);
     }
   }
 

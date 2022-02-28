@@ -68,3 +68,15 @@
   text-transform: uppercase;
   letter-spacing: 0.17rem;
 }
+
+// ===================
+// Hover and Focus on links
+// ===================
+@mixin link-hover($color) {
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $color;
+    border-bottom: 2px solid $color;
+  }
+}

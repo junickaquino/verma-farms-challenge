@@ -227,6 +227,10 @@ section.about {
   .block-1__img--container {
     max-width: 5em;
   }
+
+  .block-flex {
+    display: flex;
+  }
 }
 
 @include media-lg {

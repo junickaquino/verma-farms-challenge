@@ -54,6 +54,7 @@
 
   a {
     color: $beige-light;
+    @include link-hover($beige-light);
   }
 }
 
@@ -68,6 +69,7 @@
 
   a {
     color: $clr-legal;
+    @include link-hover($clr-legal);
   }
 }
 

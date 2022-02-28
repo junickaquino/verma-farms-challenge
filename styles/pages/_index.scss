@@ -190,6 +190,10 @@ section.satisfaction {
 }
 
 @include media-md {
+  section.satisfaction {
+    padding: 0;
+  }
+
   .satisfaction__wrapper {
     position: relative;
     display: flex;
